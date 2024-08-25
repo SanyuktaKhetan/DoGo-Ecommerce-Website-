@@ -1,0 +1,11 @@
+//mongoose provides more controll to access the DB
+//morgan is used to show the API reuqests in console
+//async handles asynchronous operations as connectig to a database
+//It is particularly useful for performing asynchronous operations, such as connecting to a database, in a clean and readable manner using the async/await syntax.
+//This approach enhances code readability, maintainability, and error handling.
+//Middleware functions are used to handle incomming requests and logging in an Express.js application
+//timestamp whenever a new user is created, its created tiimme is noted
+//A router object is an isolated instance of middleware and routes.
+//Routers can be thought of as a “mini-application,” capable only of performing middleware and routing functions.
+//The GET method is used to request data from a specified resource.
+//The POST method is used to send data to the server to create/update a resource.
