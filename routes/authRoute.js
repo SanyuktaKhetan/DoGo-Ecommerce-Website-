@@ -1,11 +1,20 @@
 import express from "express";
-import {registerController} from "../controllers/authController.js";
-
+import {
+  registerController,
+  loginController,
+  testController,
+} from "../controllers/authController.js";
+import { isAdmin, requireSignIn } from "../middlewares/authMiddleware.js";
 //router object
-const router =express.Router();
+const router = express.Router();
 
 //routing
-//Register || Method POST 
-router.post("/register",registerController);
+//Register || Method POST
+router.post("/register", registerController);
 
+//LOGIN || POST
+router.post("/login", loginController);
+
+//tets routes
+router.get("/test", requireSignIn, isAdmin, testController);
 export default router;
