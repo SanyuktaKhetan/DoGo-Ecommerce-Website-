@@ -1,0 +1,323 @@
+/* * is an universal selector 
+css is applicable to every element on the page */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@600;700;800;900&display=swap');
+
+/* font-family: "Poppins", sans-serif; */
+/* font-family: "Playfair Display", serif;  --  heading styles*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+
+/* navbas css */
+.navbar{
+  background-color: #b71b42 !important  ;
+  font-family:"Poppins", sans-serif ;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 10px 0px;
+  border-bottom: 0 solid gray;
+  box-shadow: 0 8px 6px -6px black;
+  --webkit-box-shadow: 0 8px 6px -6px black;
+}
+.nav-link{
+  font-weight: 400 !important;
+  color:white
+}
+.nav-link:hover{
+  color: black !important;
+  font-size: 20px;
+}
+.nav-link.active{
+  border-bottom: 2px solid black;
+  color: black !important;
+  font-weight: 800 !important;
+}
+/* DoGo Tag */
+a.navbar-brand {
+  color: black;
+  font-size: 30px;
+  letter-spacing: 3px;
+  border: none;
+  font-family: 'roboto', sans-serif;
+  text-shadow: 0px 0px 3px white;
+}
+a.navbar-brand:hover {
+  font-size: 32px;
+  padding: 5px;
+  background: #00000024;
+}
+.navbar-brand svg{
+  margin-top: -5px;
+  margin-right: 4px;
+}
+
+
+/* Footer css */
+.footer{
+  background-color: #b71b42;
+  padding: 25px;
+  /* margin-top: 30px; */
+}
+.footer h6{
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: black;
+}
+.footer p a{
+    color: white;
+    letter-spacing: 2px;
+    text-decoration: none;
+    font-size: 20px;
+}
+.footer p a:hover{
+  color: black;
+  font-weight: 700;
+  text-decoration: underline;
+  font-size: 22px;
+}
+
+/* Page Not Found */
+.pnf {
+  display: flex;
+  min-height: 65vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pnf-title {
+  font-size: 100px;
+  font-weight: 700;
+}
+
+.pnf-heading {
+  font-weight: normal;
+}
+
+.pnf-btn {
+  color: black;
+  border: 1px solid black;
+  text-decoration: none;
+  padding: 10px;
+  margin-top: 10px;
+}
+.pnf-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Contact Us Page */
+.contact_banner{
+  background-image: url("/public/images/bg_2.png");
+  height: 89vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact_banner::before{
+  /* background-color: #ffffff40; */
+  content: '';
+  position: absolute;
+  top: 64px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.contact_form{
+  width: 500px;
+  margin: 0px auto;
+  padding: 40px;
+  color: white;
+  border: 2px solid white;
+  backdrop-filter: blur(15px);
+  font-weight: 500;
+  box-shadow: 0px 0px 20px 0px black;
+  border-radius: 50% 10% 50% 10% / 10% 50% 10% 50%;
+}
+.contact_form h1{
+  margin-bottom: 40px;
+}
+.contact_form input {
+  margin-bottom: 20px;
+  margin-left: 10px;
+  width: 70% ;
+}
+textarea#message {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.contact_form button {
+  padding: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  width: 30%;
+
+}
+.content_col{
+  display: flex;
+  text-align: center;
+  padding: 50px;
+}
+.content_col div{
+  width: 33.33%;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+.content_col div svg
+{
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+
+/* About Us Page css */
+.abt_us{
+  margin: 3%;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.into_p{
+  margin-bottom: 3%;
+}
+.abt_us img{
+  width: 70% !important;
+  height: auto;
+}
+.abt_us .txt_abt{
+  width: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: justify;
+}
+.abt_1{
+  margin-bottom: 30px;
+}
+.abt_us .img_abt{
+  width: 40%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.img_abt img{
+  width: 70% !important;
+  height: auto;
+  border: 5px ridge;
+  border-color: black;
+}
+.policy{
+  text-align: justify;
+  margin: 30px auto;
+  letter-spacing: 2px;
+  line-height: 30px;
+  margin: 30px auto;
+}
+.policy h6{
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: black;
+  text-decoration: underline;
+}
+
+
+/* Register Page CSS */
+.register{
+  display: flex;
+  justify-content: center;
+  height: 80vh;
+  flex-direction: column;
+  background-image: url("https://images.ctfassets.net/jeoogvtfnmyl/1TSZdUvDHgivvNcwgmAL4x/ccd45ef1bf5552d5b3ab57d860a95d79/HowToCleanDogHouse-GettyImages-185045435.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Playfair Display", serif;
+}
+.reg_form,.login_form{
+  margin-left: 15%;
+  background-color: #00000052;
+  width: 30%;
+  box-shadow: 0px 0px 9px 1px black;
+  border: 5px ridge rgba(255, 255, 255, 0.575);
+}
+.register h1{
+  margin-bottom: -10px;
+  color: #b71b42;;
+  background-color: #000000ab;
+  text-shadow: 4px 1px 2px #000000;
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  letter-spacing: 5px;
+  padding: 20px;
+
+}
+.register form{
+  text-align: center;
+  padding: 30px;
+  background-color: #000000ab;
+}
+.reg_btn {
+  width: 100%;
+  background-color: #b71b42;;
+  color: black;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  border: 2px solid black;
+}
+.reg_btn:hover{
+  background-color:#b71b42; ;
+  color: #000000;
+  border: 2px solid #000000;
+  font-size: 22px;
+  padding: 10px;
+}
+.reg_btn:active{
+  background-color:#fb9600 ;
+  color: #000000;
+  border: 2px solid #000000;
+  font-size: 22px;
+  padding: 10px;
+}
+
+/* Login form Css */
+
+.login{
+  display: flex;
+  justify-content: center;
+  height: 80vh;
+  flex-direction: column;
+  background-position: center;
+  background-image: url("https://dyeranimalclinic.com/wp-content/uploads/2020/06/interactivetoysindyerin-scaled.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Playfair Display", serif;
+}
+.login form{
+  text-align: center;
+  padding: 30px;
+}
+.login h1{
+  margin-bottom: -10px;
+  color: #b71b42;;
+  text-shadow: 4px 1px 2px #000000;
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  letter-spacing: 5px;
+  padding: 20px;
+}
+.login_form{
+  backdrop-filter: blur(25px);
+  border-radius: 50% 5% 50% 5% / 0% 50% 0% 50%;
+}
