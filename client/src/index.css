@@ -39,6 +39,10 @@ css is applicable to every element on the page */
   color: black !important;
   font-weight: 800 !important;
 }
+ul.dropdown-menu.show :hover{
+  font-size:20px ;
+  font-weight: 700 ;
+}
 /* DoGo Tag */
 a.navbar-brand {
   color: black;
@@ -58,6 +62,9 @@ a.navbar-brand:hover {
   margin-right: 4px;
 }
 
+.dropdown-item.active, .dropdown-item:active{
+  background-color: #fb9600;
+}
 
 /* Footer css */
 .footer{
@@ -255,7 +262,7 @@ textarea#message {
   margin-bottom: -10px;
   color: #b71b42;;
   background-color: #000000ab;
-  text-shadow: 4px 1px 2px #000000;
+  text-shadow: 0px 1px 0px #ffffff;
   font-family: "Playfair Display", serif;
   font-weight: 900;
   letter-spacing: 5px;
@@ -269,7 +276,7 @@ textarea#message {
 }
 .reg_btn {
   width: 100%;
-  background-color: #b71b42;;
+  background-color: #cf5500;;
   color: black;
   font-size: 20px;
   font-weight: 700;
@@ -277,7 +284,7 @@ textarea#message {
   border: 2px solid black;
 }
 .reg_btn:hover{
-  background-color:#b71b42; ;
+  background-color:#fb9600; ;
   color: #000000;
   border: 2px solid #000000;
   font-size: 22px;
@@ -311,7 +318,7 @@ textarea#message {
 .login h1{
   margin-bottom: -10px;
   color: #b71b42;;
-  text-shadow: 4px 1px 2px #000000;
+  text-shadow: 1px 1px 0px #ffffff;
   font-family: "Playfair Display", serif;
   font-weight: 900;
   letter-spacing: 5px;
@@ -320,4 +327,32 @@ textarea#message {
 .login_form{
   backdrop-filter: blur(25px);
   border-radius: 50% 5% 50% 5% / 0% 50% 0% 50%;
+}
+
+.for_btn{
+  background-color: #cf5500;
+  width: 100%;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  border: 2px solid black;
+}
+.log_btn{
+  background-color: #fb9600;
+  width: 100%;
+  color: #000000;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  border: 2px solid black;
+}
+
+.for_btn:hover,.log_btn:hover{
+  background-color:#000000; ;
+  color: #b71b42;
+  border: 2px solid #ffffff;
+  font-size: 22px;
+  padding: 10px;
+  font-weight: 800;
 }
